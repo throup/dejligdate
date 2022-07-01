@@ -9,7 +9,7 @@ public class Date {
     final int month;
     final int day;
 
-    static final Date EPOCH = new Date(1970, 1, 1);
+    public static final Date EPOCH = new Date(1970, 1, 1);
 
     public Date(int year, int month, int day) {
         if (year < 1) throw new InvalidYearException(year);

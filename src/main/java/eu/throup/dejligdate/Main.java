@@ -6,8 +6,8 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-        final var dateString1 = "1981-06-06";
-        final var dateString2 = "2011-11-15";
+        final var dateString1 = "1970-01-01";
+        final var dateString2 = "2022-06-23";
 
         final var date1 = Date.parse(dateString1);
         final var date2 = Date.parse(dateString2);
