@@ -7,9 +7,9 @@ import java.util.stream.IntStream;
 // Handle dates in the Common Era (ie from year 1 onwards)
 // applying rules from the Gregorian calendar.
 public class Date {
-    final int year;
-    final int month;
-    final int day;
+    public final int year;
+    public final int month;
+    public final int day;
 
     public static final Date ERA = new Date(1, 1, 1);
 
