@@ -41,7 +41,7 @@ public class Date {
             throw new DateException("Unable to parse date: %s.\nValid dates have the format YYYY-MM-DD.".formatted(text));
     }
 
-    static int daysInMonth(int year, int month) {
+    public static int daysInMonth(int year, int month) {
         switch (month) {
             case 1:
             case 3:
