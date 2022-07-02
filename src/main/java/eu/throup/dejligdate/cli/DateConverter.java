@@ -1,4 +1,4 @@
-package eu.throup.dejligdate;
+package eu.throup.dejligdate.cli;
 
 import eu.throup.dejligdate.spike.Date;
 import picocli.CommandLine;

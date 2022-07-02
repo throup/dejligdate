@@ -73,7 +73,6 @@
                 <executions>
                     <execution>
                         <goals>
-<!--                            <goal>compile</goal>-->
                             <goal>testCompile</goal>
                         </goals>
                     </execution>
@@ -114,7 +113,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>eu.throup.dejligdate.Main</mainClass>
+                            <mainClass>eu.throup.dejligdate.cli.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
