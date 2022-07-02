@@ -6,20 +6,21 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ExamplesTest {
-    Date epoch = Date.EPOCH;
+    Date era = Date.ERA;
+    Date epoch = new Date(1970, 1, 1);
     Date thirdMillenium = Date.parse("2001-01-01");
     Date fallOfTheWall = new Date(1989, 11, 9);
     Date firesAgain = Date.parse("2022-06-23");
 
     @Test
-    void Epoch_isZeroDays_sinceTheEpoch() {
-        assertEquals(0, epoch.daysSinceEpoch());
+    void Era_isZeroDays_sinceTheEra() {
+        assertEquals(0, era.daysSinceEra());
     }
 
     @Test
-    void ThirdMillenium_is11323Days_sinceTheEpoch() {
+    void ThirdMillenium_is11323Days_sinceTheEraBegan() {
         // Think of all the fools celebrating one year earlier... :-D
-        assertEquals(11323, thirdMillenium.daysSinceEpoch());
+        assertEquals(730485, thirdMillenium.daysSinceEra());
     }
 
     @Test

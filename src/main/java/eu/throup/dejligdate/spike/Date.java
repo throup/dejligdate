@@ -4,12 +4,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
+// Handle dates in the Common Era (ie from year 1 onwards)
+// applying rules from the Gregorian calendar.
 public class Date {
     final int year;
     final int month;
     final int day;
 
-    public static final Date EPOCH = new Date(1970, 1, 1);
+    public static final Date ERA = new Date(1, 1, 1);
 
     public Date(int year, int month, int day) {
         if (year < 1) throw new InvalidYearException(year);
@@ -78,8 +80,8 @@ public class Date {
         return "Date(%04d-%02d-%02d)".formatted(year, month, day);
     }
 
-    public int daysSinceEpoch() {
-        final var years = IntStream.range(1970, year);
+    public int daysSinceEra() {
+        final var years = IntStream.range(1, year);
         final var daysInYears = years.map(Date::daysInYear);
         final var yearDays = daysInYears.sum();
 
@@ -93,7 +95,7 @@ public class Date {
     }
 
     public int daysSince(Date other) {
-        return daysSinceEpoch() - other.daysSinceEpoch();
+        return daysSinceEra() - other.daysSinceEra();
     }
 
     public int daysBetween(Date other) {
