@@ -6,6 +6,6 @@ public class InvalidMonthException extends DateException {
     }
 
     public InvalidMonthException(int month) {
-        super("There is no month %d in the Gregorian calender.".formatted(month));
+        super("There is no month %d in the Gregorian calendar.".formatted(month));
     }
 }

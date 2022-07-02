@@ -6,6 +6,6 @@ public class InvalidDayException extends DateException {
     }
 
     public InvalidDayException(int day) {
-        super("There is no day %d for the given month in the Gregorian calender.".formatted(day));
+        super("There is no day %d for the given month in the Gregorian calendar.".formatted(day));
     }
 }

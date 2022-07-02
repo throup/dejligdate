@@ -6,6 +6,6 @@ public class InvalidYearException extends DateException {
     }
 
     public InvalidYearException(int year) {
-        super("There is no year %d in the Gregorian calender.".formatted(year));
+        super("There is no year %d in the Gregorian calendar.".formatted(year));
     }
 }
