@@ -77,7 +77,11 @@ public class Date {
 
     @Override
     public String toString() {
-        return "Date(%04d-%02d-%02d)".formatted(year, month, day);
+        return "Date(" + formatted() + ")";
+    }
+
+    public String formatted() {
+        return "%04d-%02d-%02d".formatted(year, month, day);
     }
 
     public int daysSinceEra() {
