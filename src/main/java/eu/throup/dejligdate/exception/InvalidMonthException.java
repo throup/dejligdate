@@ -1,6 +1,6 @@
-package eu.throup.dejligdate.spike;
+package eu.throup.dejligdate.exception;
 
-class InvalidMonthException extends DateException {
+public class InvalidMonthException extends DateException {
     public InvalidMonthException() {
         super();
     }

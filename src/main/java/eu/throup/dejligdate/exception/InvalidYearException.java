@@ -1,6 +1,6 @@
-package eu.throup.dejligdate.spike;
+package eu.throup.dejligdate.exception;
 
-class InvalidYearException extends DateException {
+public class InvalidYearException extends DateException {
     public InvalidYearException() {
         super();
     }

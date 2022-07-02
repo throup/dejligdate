@@ -1,6 +1,6 @@
-package eu.throup.dejligdate.spike;
+package eu.throup.dejligdate.exception;
 
-class DateException extends RuntimeException {
+public class DateException extends RuntimeException {
     public DateException() {
         super();
     }

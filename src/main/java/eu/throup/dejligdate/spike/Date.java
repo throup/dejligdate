@@ -1,5 +1,10 @@
 package eu.throup.dejligdate.spike;
 
+import eu.throup.dejligdate.exception.DateException;
+import eu.throup.dejligdate.exception.InvalidDayException;
+import eu.throup.dejligdate.exception.InvalidMonthException;
+import eu.throup.dejligdate.exception.InvalidYearException;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;

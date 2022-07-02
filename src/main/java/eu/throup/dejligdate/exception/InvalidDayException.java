@@ -1,6 +1,6 @@
-package eu.throup.dejligdate.spike;
+package eu.throup.dejligdate.exception;
 
-class InvalidDayException extends DateException {
+public class InvalidDayException extends DateException {
     public InvalidDayException() {
         super();
     }
