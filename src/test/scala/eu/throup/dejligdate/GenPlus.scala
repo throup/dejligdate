@@ -1,6 +1,6 @@
 package eu.throup.dejligdate
 
-import eu.throup.dejligdate.spike.Date
+import eu.throup.dejligdate.domain.Date
 import org.scalacheck.{Arbitrary, Gen}
 import org.scalacheck.ops.time.ImplicitJavaTimeGenerators.arbLocalDate
 

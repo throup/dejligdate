@@ -1,7 +1,7 @@
 package eu.throup.dejligdate
 
 import eu.throup.dejligdate.GenPlus._
-import eu.throup.dejligdate.spike.Date
+import eu.throup.dejligdate.domain.Date
 import org.scalacheck.Gen
 import org.scalatest.freespec.AnyFreeSpec
 import org.scalatest.matchers.should.Matchers

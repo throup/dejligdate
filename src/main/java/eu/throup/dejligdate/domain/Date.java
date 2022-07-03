@@ -1,4 +1,4 @@
-package eu.throup.dejligdate.spike;
+package eu.throup.dejligdate.domain;
 
 import eu.throup.dejligdate.exception.DateException;
 import eu.throup.dejligdate.exception.InvalidDayException;

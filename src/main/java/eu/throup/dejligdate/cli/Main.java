@@ -1,6 +1,6 @@
 package eu.throup.dejligdate.cli;
 
-import eu.throup.dejligdate.spike.Date;
+import eu.throup.dejligdate.domain.Date;
 import picocli.CommandLine;
 
 import java.util.concurrent.Callable;

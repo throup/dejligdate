@@ -1,11 +1,10 @@
-package eu.throup.dejligdate;
+package eu.throup.dejligdate.domain;
 
-import eu.throup.dejligdate.spike.Date;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ExamplesTest {
+public class DateExamplesTest {
     Date era = Date.ERA;
     Date epoch = new Date(1970, 1, 1);
     Date thirdMillenium = Date.parse("2001-01-01");
