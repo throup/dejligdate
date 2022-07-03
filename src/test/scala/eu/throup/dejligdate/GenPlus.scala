@@ -1,11 +1,10 @@
 package eu.throup.dejligdate
 
 import eu.throup.dejligdate.domain.Date
-import org.scalacheck.{Arbitrary, Gen}
+import org.scalacheck.Gen
 import org.scalacheck.ops.time.ImplicitJavaTimeGenerators.arbLocalDate
 
 import java.time.LocalDate
-import scala.annotation.tailrec
 
 trait GenPlus {
   def gen: Gen.type
