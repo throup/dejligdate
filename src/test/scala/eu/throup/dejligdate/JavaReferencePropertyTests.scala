@@ -10,6 +10,7 @@ import org.scalatestplus.scalacheck.ScalaCheckPropertyChecks
 import java.time.{Duration, LocalDate}
 import scala.util.{Failure, Success, Try}
 
+/** This test suite uses the Java Time library as a reference for comparison. */
 class JavaReferencePropertyTests
     extends AnyFreeSpec
     with Matchers

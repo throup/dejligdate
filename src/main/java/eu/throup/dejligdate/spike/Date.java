@@ -5,13 +5,14 @@ import eu.throup.dejligdate.exception.InvalidDayException;
 import eu.throup.dejligdate.exception.InvalidMonthException;
 import eu.throup.dejligdate.exception.InvalidYearException;
 
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
 // Handle dates in the Common Era (ie from year 1 onwards)
 // applying rules from the Gregorian calendar.
-public class Date {
+public class Date implements Comparable<Date> {
     public final int year;
     public final int month;
     public final int day;
@@ -81,6 +82,19 @@ public class Date {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Date date = (Date) o;
+        return year == date.year && month == date.month && day == date.day;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(year, month, day);
+    }
+
+    @Override
     public String toString() {
         return "Date(" + formatted() + ")";
     }
@@ -109,5 +123,16 @@ public class Date {
 
     public int daysBetween(Date other) {
         return Math.abs(daysSince(other));
+    }
+
+    @Override
+    public int compareTo(Date o) {
+        if (year < o.year) return -1;
+        else if (year > o.year) return 1;
+        else if (month < o.month) return -1;
+        else if (month > o.month) return 1;
+        else if (day < o.day) return -1;
+        else if (day > o.day) return 1;
+        return 0;
     }
 }
