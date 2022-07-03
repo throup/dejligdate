@@ -14,8 +14,11 @@ public class Main implements Callable<Integer>{
     @CommandLine.Parameters(index = "1", description = "The second date, in the format YYYY-MM-DD.", converter = DateConverter.class)
     private Date date2;
 
-    @CommandLine.Option(names = {"-V", "--verbose"}, description = "Include information about the calculation, not just the result.")
+    @CommandLine.Option(names = {"-v", "--verbose"}, description = "Include information about the calculation, not just the result.")
     private boolean verbose;
+
+    @CommandLine.Option(names = { "-h", "--help" }, usageHelp = true, description = "display this help message")
+    private boolean helpRequested = false;
 
     @Override
     public Integer call() throws Exception {
@@ -33,7 +36,11 @@ public class Main implements Callable<Integer>{
     }
 
     public static void main(String... args) {
-        int exitCode = new CommandLine(new Main()).execute(args);
+        int exitCode = runToExitCode(args);
         System.exit(exitCode);
+    }
+
+    static int runToExitCode(String... args) {
+        return new CommandLine(new Main()).execute(args);
     }
 }
