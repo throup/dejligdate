@@ -103,7 +103,7 @@ In short:
 ### Interpreting the brief
 The [challenge brief](challenge.md) was very open-ended, which has allowed me to make some assumptions:
 
-- "dates" are interpreted as describe above; this is more restrictive than the Java libraries (and ISO-8601), but I believe it will meet most users' expectations without introducing confusions like "year zero".
+- "dates" are interpreted as described above; this is more restrictive than the Java libraries (and ISO-8601), but I believe it will meet most users' expectations without introducing confusions like "year zero".
 - "a program" has been realised as a CLI application, developed and tested on a modern Linux OS. The underlying business logic could easily be embedded in other forms of programs; f.eks a web application.
 - the Java Time library has not been used in the [production code](src/main), but it is used in the [Java Reference tests](src/test/scala/eu/throup/dejligdate/JavaReferencePropertyTests.scala) to act as a reference implementation for date handling. There are no references to `java.time` within the application itself. 
 
