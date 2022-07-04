@@ -5,7 +5,6 @@ import eu.throup.dejligdate.exception.InvalidMonthException;
 import eu.throup.dejligdate.exception.InvalidYearException;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class DateExceptionsTest {

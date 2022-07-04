@@ -1,5 +1,5 @@
 Name:          dejligdate
-Version:       0.0.13
+Version:       0.0.14
 Release:       1%{?dist}
 Summary:       Calculate the number of days in-between two dates
 License:       GPL-3.0

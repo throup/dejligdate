@@ -6,7 +6,7 @@
 
     <groupId>eu.throup</groupId>
     <artifactId>dejligdate</artifactId>
-    <version>0.0.13-SNAPSHOT</version>
+    <version>0.0.14-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
