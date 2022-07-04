@@ -2,6 +2,9 @@
 
 This project contains a small Java application, which calculates the number of days in-between two dates.
 
+[![Java CI with Maven](https://github.com/throup/dejligdate/actions/workflows/maven.yml/badge.svg)](https://github.com/throup/dejligdate/actions/workflows/maven.yml)
+[![Copr build status](https://copr.fedorainfracloud.org/coprs/throup/dejligdate/package/dejligdate/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/throup/dejligdate/package/dejligdate/)
+
 ## Usage
 ```
 Usage: dejligdate [-hv] <date1> <date2>
