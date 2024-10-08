@@ -99,12 +99,12 @@ In short:
 - the earliest valid date is 0001-01-01 -- 1st January, year 1; and
 - leap years occur every 4 years, with special handling for the end of each century.
 
-## Devlopment notes
+## Development notes
 ### Interpreting the brief
 The [challenge brief](challenge.md) was very open-ended, which has allowed me to make some assumptions:
 
 - "dates" are interpreted as described above; this is more restrictive than the Java libraries (and ISO-8601), but I believe it will meet most users' expectations without introducing confusions like "year zero".
-- "a program" has been realised as a CLI application, developed and tested on a modern Linux OS. The underlying business logic could easily be embedded in other forms of programs; f.eks a web application.
+- "a program" has been realised as a CLI application, developed and tested on a modern Linux OS. The underlying business logic could easily be embedded in other forms of programs; e.g. a web application.
 - the Java Time library has not been used in the [production code](src/main), but it is used in the [Java Reference tests](src/test/scala/eu/throup/dejligdate/JavaReferencePropertyTests.scala) to act as a reference implementation for date handling. There are no references to `java.time` within the application itself. 
 
 ### Test coverage
